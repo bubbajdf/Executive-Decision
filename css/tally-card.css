@@ -1,0 +1,50 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 10px;
+}
+
+.larger {
+  font-size: 20px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+.topgrid {
+  border: 1px solid blue; 
+  width: 100%
+}
+
+.outer {
+  border: 1px solid blue; 
+  height: 320px;
+  width: 100%;
+}
+
+.market {
+  float: left;
+  width: 70%;
+  padding: 5px;
+}
+
+.finish {
+  height: 140px;
+  width: 70%
+}
+
+.production {
+    border: 1px solid blue; 
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    float: right;
+    padding: 5px;
+    height: 310px;
+}
+
+.color { background-color: #dddddd }
