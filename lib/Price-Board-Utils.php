@@ -71,3 +71,26 @@ HTML;
 function CreateProductionChart()
 {
 }
+
+function CreateBlankColumns()
+{
+   for ($x = 1; $x <= 18; $x++)
+   {
+       $html = <<<HTML
+<td></td>
+HTML;
+        echo $html;
+   }
+}
+
+function CreateBlankTotals()
+{
+   for ($x = 1; $x <= 6; $x++)
+   {
+       $html = <<<HTML
+<th colspan="2">TOTAL</th>
+<th></th>
+HTML;
+        echo $html;
+   }
+}
