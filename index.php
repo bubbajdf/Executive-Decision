@@ -1,8 +1,11 @@
 <?php
 
-require_once 'lib/DatabaseUtils.php';
+require_once 'init.php';
+require_once EXEC_DECISION_CLASSES . 'DatabaseUtils.php';
 
-$conn = ConnectToDb();
+// Connect to and Load Data
+DatabaseUtils::ConnectToDb();
+DatabaseUtils::LoadTables();
 
 $price_visible = 'display:block';
 $tally_visible = 'display:block';
