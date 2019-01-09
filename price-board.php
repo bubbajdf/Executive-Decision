@@ -1,6 +1,5 @@
 <?php
-require_once 'lib/Price-Board-Utils.php';
-
+require_once EXEC_DECISION_CLASSES . 'Price-Board-Utils.php';
 ?>
 
 <h1 align="center">Executive Decision Price Level Board</h1>
@@ -13,123 +12,24 @@ require_once 'lib/Price-Board-Utils.php';
 <table>
 <body> 
   <tr>
-   <th>
+   <th></th>
    <th>Opening Price</th>
-   <th>JAN.</th>
-   <th>FEB.</th>
-   <th>MARCH</th>
-   <th>APRIL</th>
-   <th>MAY</th>
-   <th>JUN.</th>
-   <th>JULY</th>
-   <th>AUG.</th>
-   <th>SEPT.</th>
-   <th>OCT.</th>
-   <th>NOV.</th>
-   <th>DEC.</th>
+<?php
+echo PriceBoardUtils::LoadTurnColumnHeadings();
+?>
  </tr>
  <tr>
    <td class="color"  colspan="14">RAW MATERIALS</td>
  </tr>
- <tr>
-   <td>X-FINE</td>
-   <td>40</td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
- </tr>
- <tr>
-   <td>FINE</td>
-   <td>30</td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
- </tr>
- <tr>
-   <td>STD.</td>
-   <td>20</td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
- </tr>
+<?php
+echo PriceBoardUtils::LoadRawMaterialsMonthlyData();
+?>
  <tr>
    <td class="color" colspan="14">FINISHED GOODS</td>
  </tr>
- <tr>
-   <td>A</td>
-   <td>140</td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
- </tr>
- <tr>
-   <td>B</td>
-   <td>115</td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
- </tr>
- <tr>
-   <td>E</td>
-   <td>90</td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
-   <td></td>
- </tr>
+<?php
+echo PriceBoardUtils::LoadFinishedGoodsMonthlyData();
+?>
  </table>
 </div>
 <br>
@@ -140,9 +40,9 @@ require_once 'lib/Price-Board-Utils.php';
 <table>
  <tr>
 <?php
-$a = CreateRawMaterialsUnitsRow();
+$a = PriceBoardUtils::CreateRawMaterialsUnitsRow();
 echo $a;
-$a = CreateRawMaterialsMovementsRow();
+$a = PriceBoardUtils::CreateRawMaterialsMovementsRow();
 echo $a;
 ?>
  </tr>
@@ -151,9 +51,9 @@ echo $a;
     <h3>FINISHED GOODS</h3>
 <table>
 <?php
-$a = CreateFinishedGoodsUnitsRow();
+$a = PriceBoardUtils::CreateFinishedGoodsUnitsRow();
 echo $a;
-$a = CreateFinishedGoodsMovementRow();
+$a = PriceBoardUtils::CreateFinishedGoodsMovementRow();
 echo $a;
 ?>
 </table>
