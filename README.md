@@ -2,4 +2,4 @@
 
 Executive Decision is a game.  A board game.
 
-Either is fine
+Motto: "Either is fine"
