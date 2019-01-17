@@ -10,6 +10,7 @@ DatabaseUtils::LoadTables();
 $price_visible = 'display:block';
 $tally_visible = 'display:block';
 $players_visible = 'display:block';
+$instr_visible = 'display:block';
 $main_visible = 'display:none';
 
 if (isset($_POST['price']))
@@ -18,6 +19,7 @@ if (isset($_POST['price']))
     $price_visible = 'display:none';
     $tally_visible = 'display:none';
     $players_visible = 'display:none';
+    $instr_visible = 'display:none';
     $main_visible = 'display:block';
 }
 
@@ -27,6 +29,7 @@ if (isset($_POST['tally']))
     $tally_visible = 'display:none';
     $price_visible = 'display:none';
     $players_visible = 'display:none';
+    $instr_visible = 'display:none';
     $main_visible = 'display:block';
 }
 
@@ -36,6 +39,17 @@ if (isset($_POST['players']))
     $tally_visible = 'display:none';
     $price_visible = 'display:none';
     $players_visible = 'display:none';
+    $instr_visible = 'display:none';
+    $main_visible = 'display:block';
+}
+
+if (isset($_POST['instr']))
+{
+    require_once 'instructions.php';
+    $tally_visible = 'display:none';
+    $price_visible = 'display:none';
+    $players_visible = 'display:none';
+    $instr_visible = 'display:none';
     $main_visible = 'display:block';
 }
 
@@ -44,6 +58,7 @@ if (isset($_POST['main']))
     $tally_visible = 'display:block';
     $price_visible = 'display:block';
     $players_visible = 'display:block';
+    $instr_visible = 'display:block';
     $main_visible = 'display:none';
 }
 
@@ -53,7 +68,8 @@ if (isset($_POST['main']))
 
 <input type="submit" name="price" id="price" value="Price Board" style="<?php echo $price_visible?>">
 <input type="submit" name="tally" id="tally" value="Tally Card" style="<?php echo $tally_visible?>">
-<input type="submit" name="players" id="players" value="Players" style="<?php echo $players_visible?>">
+<input type="submit" name="players" id="players" value="Start New Game" style="<?php echo $players_visible?>">
+<input type="submit" name="instr" id="instr" value="Instructions" style="<?php echo $instr_visible?>">
 <input type="submit" name="main" id="main" value="Main Form" style="<?php echo $main_visible?>">
 
 </form>
