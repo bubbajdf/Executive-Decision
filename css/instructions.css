@@ -1,0 +1,39 @@
+table
+{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 70%;
+  font-size: 10px;
+}
+
+.smalltable
+{
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+  font-size: 10px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 5px;
+}
+
+.smalllabel {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.color { background-color: #dddddd }
+
+h2 {
+  color: blue;
+  background-color: powderblue;
+  cursor: pointer;
+}
+h3 {
+  color: red;
+  background-color: yellow;
+  cursor: pointer;
+}
