@@ -295,9 +295,45 @@ who has made the most profit for his corporation is the winner.
 </div>
 <h2>STRATEGY TIPS</h2>
 <div>
-Hi Clinton
+<b>When purchasing Raw Materials</b>, try to estimate the number of units that
+the other players will order and enter your Bids accordingly.  Keep in mind that
+the Market Price for <i>any grade</i> of Material <i>never drops more than $10 per month.</i>
+Also, that if all players should order the maximum units allowable in one month, 
+and the total is equally divided among the three grades of Raw Material, the
+<i>average price increase for each grade will be $2.</i>  Circumstances naturally
+can influence players to order more of one grade of Material than another, or token_get_all
+order less than the total amount permitted (as when a player does not have 
+sufficient funds).
+<br><br>
+<b>When selling Finished Goods,</b> observe opponents' stock piles and attempt to 
+determione their most likely offerings.  Use this information in setting your
+selling prices.
+<br><br>
+Study the relative prices of Raw Materials and Finished Goods to discover which
+Finished Goods offers the highest profit margin.  At times it may be desirable to
+temporarily order less Raw Material and sell less Finished Goods until it again
+becomes possible to make a good profit on the transaction.
 </div>
+<h2>VARIATION</h2>
+<div>
+When players become familar with the basic game, they may wish to try the 
+following variation:
+<br><br>
+<b>PURCHASING RAW MATERIAL CERTIFICATES</b>.  If a player's bid is lower than 
+Market Price, he is not successful in purchasing his entire order of that grade.
+He may, however, purchase some of that order at his bid price.  He <i>loses 
+one unit</i> for each dollar his Bid Price is below the Market Price.
+</div>
+<br><br>
+<b>SELLING THE FINISHED GOODS</b>.  A player may sell some of his offering
+even if his bid is higher than Market Price.  HE loses sales as follows:
+<br>
+<table>
+</table>
+<i>Example: Player's July offering is shown above.  Market Price for "A" is $1.31,
+"B" is $110 and "C" is $114.  Player offered 6 units of "A" at $137, but was
+unsuccessful in selling 3 of these units as his Bid Price was $16 dollars 
+higher than the Market Price.  He succeeded in selling all units of "B"
+and "C".  His Tally sheet is adjusted as shown below.</i>
 </div>  <!-- END MAIN  ACCORDION -->
 <br><br><br>
-
-
